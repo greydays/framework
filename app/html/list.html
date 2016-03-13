@@ -1,0 +1,8 @@
+<section data-ng-init="getAllItems()">
+  <div data-ng-repeat="item in items">
+    <h3>{{item.title}}</h3>
+    <p>{{item.date}}</p>
+    <p>{{item.cost | currency}}</p>
+    <p>{{item.description}}</p>
+  </div>
+</section>

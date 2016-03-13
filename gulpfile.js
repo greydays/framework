@@ -23,18 +23,18 @@ gulp.task('lint', function(){
 });
 
 gulp.task('build:css', function() {
-  gulp.src('app/scss/app.scss')
+  gulp.src('app/sass/app.sass')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(minifyCss())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('public/'));
 });
 
 gulp.task('build:html', function() {
   gulp.src('app/**/*.html')
-  .pipe(gulp.dest('build/'));
+  .pipe(gulp.dest('public/'));
 });
 
 gulp.task('build:js', function() {
@@ -44,13 +44,13 @@ gulp.task('build:js', function() {
       filename: 'bundle.js'
     }
   }))
-  .pipe(gulp.dest('build/'));
+  .pipe(gulp.dest('public/'));
 });
 
 gulp.task('clean', function() {
   return gulp.src('build', {read: false})
         .pipe(clean({force: true}));
-})
+});
 
 gulp.task('watch:css', function() {
   gulp.watch(paths.css, ['build:css']);

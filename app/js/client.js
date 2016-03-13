@@ -11,12 +11,12 @@ require('./directives/appDirectives')(app);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/home', {
-      templateUrl: 'templates/home.html',
+    .when('/items', {
+      templateUrl: 'templates/items.html',
       controller: 'appController'
     })
     .when('/', {
-      templateUrl: 'templates/home.html',
+      templateUrl: 'templates/items.html',
       controller: 'appController'
-    })
+    });
 }]);
