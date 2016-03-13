@@ -3,11 +3,11 @@
 require('angular/angular');
 require('angular-route');
 
-var application = angular.module('application', ['ngRoute']);
+var app = angular.module('app', ['ngRoute']);
 
-require('.controllers/appController')(app);
+require('./controllers/appController')(app);
 
-require('./directives/appDirectives')(app);
+require('./directives/appDirective')(app);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
