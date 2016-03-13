@@ -4,7 +4,7 @@ To get stated: Download, NPM install, and Gulp Build:all
 ###To install and run Mongo locally:
 - Terminal with Homebrew: brew install mongodb
 - Create a data/ directory in framework directory
-- Terminal: mongod --dbpath <path to data directory>
+- Terminal: mongod --dbpath (/path)
 
 ###To run:
 node app.js, or nodemon (if installed)
