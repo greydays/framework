@@ -1,0 +1,24 @@
+{
+  "name": "framework",
+  "version": "0.1.0",
+  "description": "first stab at boilerplate MEAN app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greydays/framework.git"
+  },
+  "keywords": [
+    "framework",
+    "boilerplate",
+    "MEAN"
+  ],
+  "author": "Ryan Flaherty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greydays/framework/issues"
+  },
+  "homepage": "https://github.com/greydays/framework#readme"
+}
